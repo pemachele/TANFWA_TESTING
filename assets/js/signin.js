@@ -77,7 +77,7 @@ function send_data() {
 
 function handlePortal() {
     if (sessionStorage.getItem('token')) {
-        window.location = `https://tanfwa.or.tz/verify/${sessionStorage.getItem('token')}`
+        window.location = `https://account.tanfwa.or.tz/verify/${sessionStorage.getItem('token')}`
 
     } else {
         alert("Please sigin first")
