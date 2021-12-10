@@ -1,6 +1,5 @@
 function send_data() {
 
-
     var k = function (t, k, e) {
             var j = $('<div class="kt-alert kt-alert--outline alert alert-' + k + ' alert-dismissible" role="alert">\t\t\t<button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>\t\t\t<span></span>\t\t</div>');
             t.find(".alert").remove(), j.prependTo(t), KTUtil.animateClass(n[0], "fadeIn animated"), j.find("span").html(e)

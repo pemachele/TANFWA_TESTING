@@ -90,29 +90,32 @@ function auth() {
     if ( path === "signin.html"){
 
         if (sessionStorage.getItem('token')) {
-            $('#login-form').replaceWith(" <div> </div>")
+            $('#jj').replaceWith(" <div> </div>")
 
         } else {
-            $('#login-form').replaceWith(" <div id=\"login-form\" >" +
-                "<form method=\"post\"   >\n" +
-                "                        <div class=\"row\" id=\"message_container\" >\n" +
+            $('#jj').replaceWith("" +
+                "<div id =\"jj\">\n" +
+                "                        <form method=\"post\" id=\"login-form\" >\n" +
+                "                            <div class=\"row\" id=\"message_container\">\n" +
                 "\n" +
-                "                        </div>\n" +
-                "                        <div class=\"row\">\n" +
-                "                            <div class=\"col-md-12\">\n" +
-                "                                <input type=\"email\" name=\"email\" id=\"email\" class=\"form-control\" placeholder=\"Email\">\n" +
                 "                            </div>\n" +
-                "                            <div class=\"col-md-12\">\n" +
-                "                                <input type=\"password\" name=\"password\" id=\"password\" class=\"form-control\" placeholder=\"Password\">\n" +
-                "                            </div>\n" +
+                "                            <div class=\"row\">\n" +
+                "                                <div class=\"col-md-12\">\n" +
+                "                                    <input type=\"email\" name=\"email\" id=\"email\" class=\"form-control\"\n" +
+                "                                           placeholder=\"Email\">\n" +
+                "                                </div>\n" +
+                "                                <div class=\"col-md-12\">\n" +
+                "                                    <input type=\"password\" name=\"password\" id=\"password\" class=\"form-control\"\n" +
+                "                                           placeholder=\"Password\">\n" +
+                "                                </div>\n" +
                 "\n" +
-                "                            \n" +
-                "                        </div>\n" +
-                "                    </form>  " +
-                " <div class=\"col-md-12 mt20\">\n" +
+                "\n" +
+                "                            </div>\n" +
+                "                        </form>\n" +
+                "                        <div class=\"col-md-12 mt20\">\n" +
                 "                            <button id=\"login-submit\" class=\"btn-2\" onclick=send_data()>Signin</button>\n" +
-                "                        </div>" +
-                "</div>" )
+                "                        </div>\n" +
+                "                    </div>")
         }
     }
 
