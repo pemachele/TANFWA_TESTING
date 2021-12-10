@@ -3,7 +3,7 @@ const path = thePath.substring(thePath.lastIndexOf("/") + 1);
 
 
 function auth() {
-    console.log(path)
+
     if(path==="constitution.html"){
         if (sessionStorage.getItem('token')) {
             $('#download_con').replaceWith("<div id=\"download_con\" >\n" +
@@ -60,7 +60,8 @@ function auth() {
                 "                                </div>")
         }
 
-    }if ( path === "banking-details.html"){
+    }
+    if ( path === "banking-details.html"){
 
         if (sessionStorage.getItem('token')) {
             $('#download_rules').replaceWith(" <div id=\"banking-details-div\" >\n" +
@@ -83,6 +84,33 @@ function auth() {
                 "\n" +
                 "                                    </a>\n" +
                 "                                </div>")
+        }
+    }
+
+    if ( path === "signin.html"){
+
+        if (sessionStorage.getItem('token')) {
+            $('#login-form').replaceWith(" <div> </div>")
+
+        } else {
+            $('#login-form').replaceWith(" " +
+                "<form method=\"post\"  id=\"login-form\" >\n" +
+                "                        <div class=\"row\" id=\"message_container\" >\n" +
+                "\n" +
+                "                        </div>\n" +
+                "                        <div class=\"row\">\n" +
+                "                            <div class=\"col-md-12\">\n" +
+                "                                <input type=\"email\" name=\"email\" id=\"email\" class=\"form-control\" placeholder=\"Email\">\n" +
+                "                            </div>\n" +
+                "                            <div class=\"col-md-12\">\n" +
+                "                                <input type=\"password\" name=\"password\" id=\"password\" class=\"form-control\" placeholder=\"Password\">\n" +
+                "                            </div>\n" +
+                "\n" +
+                "                            <div class=\"col-md-12 mt20\">\n" +
+                "                                <button  id=\"login-submit\" class=\"btn-2\"  onclick=send_data() >Signin</button>\n" +
+                "                            </div>\n" +
+                "                        </div>\n" +
+                "                    </form>")
         }
     }
 

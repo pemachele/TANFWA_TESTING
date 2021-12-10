@@ -8,7 +8,7 @@ function send_data() {
         d = $('#login-submit'),
 
         dataObject = {
-            code: 102,
+            code: 123,
             api: 250,
             data: {
                 email: $('#email').val(),
