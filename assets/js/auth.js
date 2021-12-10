@@ -7,11 +7,11 @@ function auth() {
     if(path==="constitution.html"){
         if (sessionStorage.getItem('token')) {
             $('#download_con').replaceWith("<div id=\"download_con\" >\n" +
-                "                                    <a href=\"assets/img/tan/TANFWA_CONSTITUTION.pdf\">\n" +
+                "                                    <a href=\"assets/img/tan/TANFWA_CONSTITUTION.pdf\" download=\"TANFWA_CONSTITUTION\" >\n" +
                 "\n" +
-                "                                        <div class=\"mt10\"\n" +
+                "                                        <div class=\"mt10 btn-2\"\n" +
                 "                                             style=\"background: #fcb444; justify-content: center; align-items: center; display: flex \">\n" +
-                "                                            Get full Pdf\n" +
+                "                                            Download\n" +
                 "                                        </div>\n" +
                 "\n" +
                 "\n" +
@@ -22,9 +22,9 @@ function auth() {
             $('#download_con').replaceWith(" <div id=\"download_con\" >\n" +
                 "                                    <a href=\"signin.html\">\n" +
                 "\n" +
-                "                                        <div class=\"mt10\"\n" +
+                "                                        <div class=\"mt10 btn-2\"\n" +
                 "                                             style=\"background: #fcb444; justify-content: center; align-items: center; display: flex \">\n" +
-                "                                            SIGNIN\n" +
+                "                                            login\n" +
                 "                                        </div>\n" +
                 "\n" +
                 "\n" +
@@ -37,9 +37,9 @@ function auth() {
             $('#download_rules').replaceWith("<div id=\"download_rules\" >\n" +
                 "                                    <a href=\"assets/img/tan/RULE-AND-REGULATION.pdf\">\n" +
                 "\n" +
-                "                                        <div class=\"mt10\"\n" +
+                "                                        <div class=\"mt10 btn-2\"\n" +
                 "                                             style=\"background: #fcb444; justify-content: center; align-items: center; display: flex \">\n" +
-                "                                            Get full Pdf\n" +
+                "                                            DOWNLOAD Pdf\n" +
                 "                                        </div>\n" +
                 "\n" +
                 "\n" +
@@ -50,9 +50,9 @@ function auth() {
             $('#download_rules').replaceWith(" <div id=\"download_rules\" >\n" +
                 "                                    <a href=\"signin.html\">\n" +
                 "\n" +
-                "                                        <div class=\"mt10\"\n" +
+                "                                        <div class=\"mt10 btn-2 \"\n" +
                 "                                             style=\"background: #fcb444; justify-content: center; align-items: center; display: flex \">\n" +
-                "                                            SIGNIN\n" +
+                "                                            LOGIN\n" +
                 "                                        </div>\n" +
                 "\n" +
                 "\n" +
@@ -75,9 +75,9 @@ function auth() {
             $('#banking-details-div').replaceWith(" <div id=\"banking-details-div\" >\n" +
                 "                                    <a href=\"signin.html\">\n" +
                 "\n" +
-                "                                        <div class=\"mt10\"\n" +
+                "                                        <div class=\"mt10 btn-2\"\n" +
                 "                                             style=\"background: #fcb444; justify-content: center; align-items: center; display: flex \">\n" +
-                "                                            SIGNIN\n" +
+                "                                            LOGIN\n" +
                 "                                        </div>\n" +
                 "\n" +
                 "\n" +
