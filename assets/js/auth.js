@@ -93,8 +93,8 @@ function auth() {
             $('#login-form').replaceWith(" <div> </div>")
 
         } else {
-            $('#login-form').replaceWith(" " +
-                "<form method=\"post\"  id=\"login-form\" >\n" +
+            $('#login-form').replaceWith(" <div id=\"login-form\" >" +
+                "<form method=\"post\"   >\n" +
                 "                        <div class=\"row\" id=\"message_container\" >\n" +
                 "\n" +
                 "                        </div>\n" +
@@ -106,11 +106,13 @@ function auth() {
                 "                                <input type=\"password\" name=\"password\" id=\"password\" class=\"form-control\" placeholder=\"Password\">\n" +
                 "                            </div>\n" +
                 "\n" +
-                "                            <div class=\"col-md-12 mt20\">\n" +
-                "                                <button  id=\"login-submit\" class=\"btn-2\"  onclick=send_data() >Signin</button>\n" +
-                "                            </div>\n" +
+                "                            \n" +
                 "                        </div>\n" +
-                "                    </form>")
+                "                    </form>  " +
+                " <div class=\"col-md-12 mt20\">\n" +
+                "                            <button id=\"login-submit\" class=\"btn-2\" onclick=send_data()>Signin</button>\n" +
+                "                        </div>" +
+                "</div>" )
         }
     }
 
