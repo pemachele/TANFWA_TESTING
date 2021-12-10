@@ -114,6 +114,15 @@ function auth() {
         }
     }
 
+    if ( path === "signin.html?code=101"){
+
+        if (sessionStorage.getItem('token')) {
+           sessionStorage.removeItem('token')
+           sessionStorage.removeItem('user_details')
+
+        }
+    }
+
 }
 
 
