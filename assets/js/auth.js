@@ -94,7 +94,7 @@ function auth() {
 
         } else {
             $('#jj').replaceWith("" +
-                "<div id =\"jj\">\n" +
+                "<div   style=\"margin: 0px 100px 0px 100px\" id =\"jj\">\n" +
                 "                        <form method=\"post\" id=\"login-form\" >\n" +
                 "                            <div class=\"row\" id=\"message_container\">\n" +
                 "\n" +
